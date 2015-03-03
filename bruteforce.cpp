@@ -1,5 +1,5 @@
 #include "bruteforce.h"
-#include <math>
+#include "math.h"
 #include <iostream>
 
 Bruteforce::Bruteforce(){ //isinya apa aja sih?

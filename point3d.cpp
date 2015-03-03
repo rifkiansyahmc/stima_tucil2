@@ -1,5 +1,5 @@
 #include "point3d.h"
-#include <math>
+#include "math.h"
 
 Point3d::Point3d(){
 	x = 0;
@@ -24,26 +24,26 @@ float Point3d::GetZ(){
 	return z;
 }
 
-void Point3d::SetAbsis(float newx){
+void Point3d::SetAbsis(int newx){
 	this->x = newx;
 }
-void Point3d::SetOrdinat(float newy){
+void Point3d::SetOrdinat(int newy){
 	this->y = newy;
 }
-void Point3d::SetZ(float newz){
+void Point3d::SetZ(int newz){
 	this->z = newz;
 }
 
 int Point3d::IsOrigin(){
 	if (x == 0 && y ==0 && z == 0){
 		return 1;
-	} else (return 0);
+	} else {return 0;}
 }
 
 int Point3d::IsEqual(Point3d P){
-	if (this->x == P.GetAbsis() && this->y == P.GetOrdinat() && this->z = P.getZ()){
+	if (this->x == P.GetAbsis() && this->y == P.GetOrdinat() && this->z == P.GetZ()){
 		return 1;
-	} else (return 0);
+	} else {return 0;}
 }
 
 float Point3d::AntarPoint(Point3d P1, Point3d P2){

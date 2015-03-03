@@ -29,7 +29,7 @@ void AddToMe(Point3d P); // current objek = current objek + P
 void AddToMe(int dx, int dy); // x=x+dx; y=y+dy
 // Fungsi lain
 int Kuadran(); // menghasilkan kuadran dari Current Objek
-int AntarPoint(Point3d P1, Point3d P2); //dengan rumus eucledian, hitung jarak antar point.
+float AntarPoint(Point3d P1, Point3d P2); //dengan rumus eucledian, hitung jarak antar point.
 
 Point3d Generate(int n); //generate random point as much as n
 Point3d Solve(Point3d P1, Point3d P2); //
