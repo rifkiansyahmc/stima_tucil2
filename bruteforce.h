@@ -7,13 +7,13 @@ class Bruteforce: public Point3d{
 		Bruteforce();
 		~Bruteforce();
 		Bruteforce(int n);
-		float sortJarak(int n);
-		void setArrayNilai(int n);
+		void sortJarak(Point3d* pointsArray);
+		void setArrayNilai(int n, float k);
 		int getArrayNilai(int n);
 		void printArray();
 	private:
 		int* arrayNilai;
-}
+};
 
 #endif
 
